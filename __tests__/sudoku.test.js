@@ -11,5 +11,9 @@ describe ('GameBoard', () => {
     var gameBoard = new GameBoard();
     expect(gameBoard.rowCheck(gameBoard.row1, 1)).toEqual(true);
   });
-});
 
+  test('should return true if number already exists in same index position in any row', () => {
+    var gameBoard = new GameBoard();
+    expect(gameBoard.columnCheck(0, 1)).toEqual(true);
+  });
+});

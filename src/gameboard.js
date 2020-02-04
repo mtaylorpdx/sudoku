@@ -18,7 +18,7 @@ GameBoard.prototype.rowCheck = function(array, userInput) {
 
 GameBoard.prototype.columnCheck = function(i, userInput) {
   var rowArray = [this.row1, this.row2, this.row3, this.row4, this.row5, this.row6, this.row7, this.row8, this.row9];
-  var columnIncludes = "";
+  var columnIncludes = false;
   rowArray.forEach(function(row) {
     if (row[i] === userInput) {
       console.log(row[i] + " " + userInput);

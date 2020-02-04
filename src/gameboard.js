@@ -9,3 +9,13 @@ export function GameBoard() {
   this.row8 = ["", "", "", "", "", "", "", "", ""];
   this.row9 = ["", "", "", "", "", "", "", "", ""];
 }
+
+GameBoard.prototype.rowCheck = function(array, userInput) {
+  if (array.includes(userInput)) {
+    return true;
+  }
+};
+
+GameBoard.prototype.columnCheck = function(i, userInput) {
+
+};
